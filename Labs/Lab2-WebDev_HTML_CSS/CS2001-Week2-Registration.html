@@ -8,18 +8,23 @@
     </head>
     <body>
         <header></header>
-        <nav>
+        <nav style="background-color: black;">
             <!-- ToDo: An unordered list to represent the menu, 
                        each list item should correspond to the menu items (Home, Register, Login, Help)
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
+            <a href = "home">Home | </a>  
+            <a href = "register">Register|  </a>  
+            <a href = "login">Login  </a>  
+            <a href = "help">Help  </a>
             <ul class="navlist">
             </ul>
          </nav>
-        <main>
+        <main >
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
-            <aside>
+             <aside><input type="text" name = "search" value = "Search">
             </aside>
+        
             <section>
                 <form class="center" novalidate>
                 <!-- ToDo: Implement the form containing 
@@ -33,13 +38,26 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
+                    <label for = "name">Name: </label><br>
+                    <input type="text" name = "name" ><br>
+                    <label for="email">Email:</label><br>
+                    <input type = "text" name = "email" ><br>
+                    <label for="password">Password:</label><br>
+                    <input type="text" name="password"><br><br>
+
+                    <input type="checkbox" name="Terms" >
+                    <label for = "Terms">I Agree to <a href = "www.google.com" > Terms and conditions
+                    </a></label><br><br>
+                    <input type="submit" value = "Submit"> 
+                    <a href = "www.google.com">Learn more</a>
+
                     
-                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
+                    <!-- <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
 
-                    <br><br>
+                    <br><br> -->
                 </form>
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
